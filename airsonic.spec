@@ -1,14 +1,14 @@
-Name:		airsonic
-Version:	10.5.0
-Release:	1%{?dist}
+Name:		    airsonic
+Version:	  11.0.0
+Release:	  1%{?dist}
 Summary:    web-based media streamer
 
-Group:		WEB
-License:	GPLv3+
-URL:		https://github.com/airsonic/airsonic
-Source0:	https://github.com/airsonic/airsonic/releases/download/v10.5.0/airsonic.war
-Source1:    https://github.com/airsonic/airsonic/blob/master/contrib/airsonic.service
-Source2:    https://github.com/airsonic/airsonic/blob/master/LICENSE.txt
+Group:		  WEB
+License:	  GPLv3+
+URL:		    https://github.com/airsonic-advanced/airsonic-advanced
+Source0:	  airsonic.war
+Source1:    airsonic.service
+Source2:    LICENSE.txt
 
 BuildRequires:	java-1.8.0-openjdk-headless
 Requires:	    java-1.8.0-openjdk-headless
