@@ -51,5 +51,5 @@ systemd_post %{name}.service
 %{_docdir}/%{name}-%{version}/*
 
 %changelog
-* Tue Nov 19 2019 CasjaysDev <rpm-devel@casjaysdev.com> - 10.5.0
+* Tue Nov 19 2019 CasjaysDev <rpm-devel@casjaysdev.pro> - 10.5.0
 - Initial RHEL Package
