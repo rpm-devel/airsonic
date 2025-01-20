@@ -36,13 +36,13 @@ install -p -m 644 $RPM_%{SOURCE2} $RPM_BUILD_ROOT/%{_docdir}/%{name}-%{version}/
 getent passwd airsonic >/dev/null || adduser --system --user-group -M --shell=/bin/bash --home=/var/airsonic airsonic
 
 %post
-systemd_post %{name}.service
+%systemd_post %{name}.service
 
 %preun
 %systemd_preun %{name}.service
 
 %postun
-%systemd_postun
+%systemd_postun_with_restart %{name}.service
 
 %files
 %defattr(-,%{name},%{name})
